@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo list</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/d519e91a20.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <h1 class="top-text">Todo Lists</h1>
+
+    <div class="list-select ">
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+        </ul>
+
+    </div>
+
+
+    <div class="card todo-list">
+        <div class="card-header" id="cleartask">
+            <form id="addTaskForm">
+                <input id="txtTaskName" type="text" class="form-control" placeholder="Type new task">
+                <div class="input-group-append float-right">
+                    <button class="btn btn-primary btn-sm" type="submit" id="btnAddNewTask">
+                        <i class="fas fa-plus "></i>
+                    </button>
+                </div>
+            </form>
+            <a id="ClearTasks" href="#" class="btn btn-danger btn-sm delete-all float-left">Elemanları Sil</a>
+        </div>
+        <ul id="task-list" class="list-group ">
+            <li class="list-group-item">To do item
+                <a href="#" class="delete-item float-right">
+                    <i class="fas fa-times"></i>
+                </a>
+            </li>
+            <li class="list-group-item">To do item
+                <a href="#" class="delete-item float-right">
+                    <i class="fas fa-times"></i>
+                </a>
+            </li>
+            <li class="list-group-item">To do item
+                <a href="#" class="delete-item float-right">
+                    <i class="fas fa-times"></i>
+                </a>
+            </li>
+            <li class="list-group-item">To do item
+                <a href="#" class="delete-item float-right">
+                    <i class="fas fa-times"></i>
+                </a>
+            </li>
+            <li class="list-group-item">To do item
+                <a href="#" class="delete-item float-right">
+                    <i class="fas fa-times"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    
+
+</body>
+</html>
